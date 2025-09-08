@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router';
 import { servicesData } from '@/utils/Service';
-import { servicecontactbg } from '@/assests/Ourservice';
 import MainLayouts from '@/Layouts/MainLayouts';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -12,7 +11,6 @@ export default function ServiceDetail() {
   const serviceId = Number(query.id);
   const service = servicesData.find((s) => s.id === serviceId);
 
-  if (!service) return <p className="p-10 text-center text-red-500">Service not found!</p>;
 
   useEffect(() => {
     AOS.init({
@@ -21,7 +19,7 @@ export default function ServiceDetail() {
       once: true,
     });
   }, []);
-
+if (!service) return <p className="p-10 text-center text-red-500">Service not found!</p>;
   return (
     <MainLayouts>
       {/* Hero Image */}

@@ -220,7 +220,7 @@ export default function HomePage() {
           </h3>
           <p className="text-blue-600 font-medium mb-4">Managing Director</p>
           <p className="text-gray-600 italic">
-            "Our commitment to excellence drives everything we do, ensuring our clients receive the highest quality service and solutions."
+            Our commitment to excellence drives everything we do, ensuring our clients receive the highest quality service and solutions.
           </p>
         </div>
       </div>
